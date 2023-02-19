@@ -26,3 +26,8 @@
 .post_link_btn{
   float: right;
 }
+
+.search_input{
+  margin: auto;
+  align-items: center;
+}

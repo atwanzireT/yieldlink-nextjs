@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Left_Bar from '@/components/left_section'
 import Right_Section from '@/components/right_section'
+import Explore_body from '@/components/features/explore/explore_body'
 
 
 export default function Explore() {
@@ -12,7 +13,7 @@ export default function Explore() {
         </div>
         <div className="w-7/12 space-x-2 justify-center relative center-section">
           <div className="mx-auto">
-            {/* <Center_Section/> */}
+            <Explore_body/>
           </div>
         </div>
         <div className="w-2/12 justify-center fixed left-8/12 right-2">
