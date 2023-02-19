@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.div-end{
+  float: right;
+}
+
+.post_content_div{
+  align-items: center;
+  margin: auto;
+}
+
+.post_img{
+  margin: auto;
+  align-content: center;
+  width: 80%;
+}
+
+.center-section{
+  margin: auto;
+  align-items: center;
+}
+
+.post_link_btn{
+  float: right;
+}
