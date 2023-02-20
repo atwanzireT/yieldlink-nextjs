@@ -1,7 +1,7 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Create_Post from "./features/createpost";
-import { PostCard, PostTextCard } from "./features/postcard";
+import { PostCard } from "./features/postcard";
 
 
 export default function Center_Section() {
@@ -18,7 +18,6 @@ export default function Center_Section() {
             </div>
             <div className="mx-auto">
                 <PostCard />
-                <PostTextCard />
             </div>
 
         </div>

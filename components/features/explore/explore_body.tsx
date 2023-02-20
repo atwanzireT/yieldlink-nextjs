@@ -1,5 +1,8 @@
 import { PostCard, PostTextCard } from "../postcard"
 import SearchInput from "../searchbox"
+import axios from "axios"
+
+
 
 function Tread() {
     return (
