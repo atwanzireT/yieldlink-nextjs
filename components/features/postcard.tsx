@@ -10,6 +10,7 @@ interface itemsType {
     id: string,
     title: string,
     image: string,
+    author: string,
 }
 
 const fetchPosts = async () => {
@@ -49,7 +50,7 @@ export function PostCard() {
                                 />
                                 <div className="m-1">
                                     <h5 className="text-gray-600 ">Lost Fedora</h5>
-                                    <h6 className="text-green-600">Researcher</h6>
+                                    <h6 className="text-green-600">{item.author}</h6>
                                 </div>
                             </div>
                             <div className="post_content_div mt-3 mx-auto">
