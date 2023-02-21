@@ -1,17 +1,10 @@
 import Link from "next/link";
-import logo from './img/logo.png';
 import { HomeIcon, HashtagIcon, ChartBarSquareIcon, PencilSquareIcon, BellIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 export default function Left_Bar() {
     return (
-        <div className="h-screen pr-3">
-            <div className="mt-5">
-                <Image
-                    src={logo}
-                    className="w-20 h-20 "
-                />
-            </div>
+        <div className="h-screen pr-3 mx-2">
             <div className="flex items-center space-x-2  my-3 me-5">
                 <Link href="/">
                     <HomeIcon className="w-7 h-7 mx-1" />

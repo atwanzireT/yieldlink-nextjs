@@ -1,6 +1,5 @@
 import Image from "next/image";
-import profile from '../img/profile.jpg';
-import coffee_beans from '../img/coffee_beans.jpg';
+import profile from './img/profile.jpg';
 import { BookmarkIcon, ChatBubbleBottomCenterIcon, HeartIcon, StarIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -10,7 +9,8 @@ interface itemsType {
     id: string,
     title: string,
     image: string,
-    author: string,
+    author_name: string,
+    user_type: string,
 }
 
 const fetchPosts = async () => {
@@ -49,8 +49,8 @@ export function PostCard() {
                                     alt=""
                                 />
                                 <div className="m-1">
-                                    <h5 className="text-gray-600 ">Lost Fedora</h5>
-                                    <h6 className="text-green-600">{item.author}</h6>
+                                    <h5 className="text-gray-600 ">{item.author_name}</h5>
+                                    <h6 className="text-green-600">{item.user_type}</h6>
                                 </div>
                             </div>
                             <div className="post_content_div mt-3 mx-auto">

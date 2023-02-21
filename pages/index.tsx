@@ -5,12 +5,14 @@ import styles from '@/styles/Home.module.css'
 import Left_Bar from '@/components/left_section'
 import Center_Section from '@/components/center_section'
 import Right_Section from '@/components/right_section'
+import Topbar from '@/components/features/topbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <div>
+      <Topbar/>
       <div className="flex">
         <div className="w-2/12 fixed left-2">
           <Left_Bar/>

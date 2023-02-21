@@ -15,7 +15,7 @@
 .post_img{
   margin: auto;
   align-content: center;
-  width: 80%;
+  width: 95%;
 }
 
 .center-section{
@@ -30,4 +30,5 @@
 .search_input{
   margin: auto;
   align-items: center;
+  width: 90%;
 }
