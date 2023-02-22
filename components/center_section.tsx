@@ -11,7 +11,7 @@ export default function Center_Section() {
                 <ArrowLeftIcon className="w-6 h-6 mb-3 mt-5 mr-4" />
                 <h1 className="text-green-600 text-2xl my-4">Home</h1>
             </div> */}
-            <div className="mt-3">
+            <div className="mt-1">
                 <Create_Post />
             </div>
             <div>

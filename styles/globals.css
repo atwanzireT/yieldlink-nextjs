@@ -18,9 +18,14 @@
   width: 95%;
 }
 
+/* Grid */
 .center-section{
   margin: auto;
   align-items: center;
+}
+
+.left_bar{
+  
 }
 
 .post_link_btn{
