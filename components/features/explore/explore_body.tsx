@@ -1,5 +1,5 @@
-import { PostCard, PostTextCard } from "../postcard"
-import SearchInput from "../searchbox"
+import { PostCard } from "../postcard"
+import {SearchInput} from "../searchbox"
 import axios from "axios"
 
 
@@ -20,7 +20,7 @@ function Tread() {
 }
 export default function Explore_body() {
     return (
-        <div className="container px-2 border border-y-0 border-l-1 border-r-1 h-full px-5">
+        <div className="px-2 mx-2 border border-y-0 border-l-1 border-r-1 h-full px-5">
             <div className="my-3 mx-auto">
                 <SearchInput />
             </div>
@@ -34,7 +34,6 @@ export default function Explore_body() {
             </div>
             <div>
                 <PostCard />
-                <PostTextCard />
             </div>
         </div>
     )

@@ -1,3 +1,4 @@
+import Topbar from '@/components/features/topbar'
 import Image from 'next/image'
 import Left_Bar from '../components/left_section'
 import Right_Section from '../components/right_section'
@@ -6,6 +7,7 @@ import Right_Section from '../components/right_section'
 export default function Research() {
   return (
     <div>
+      <Topbar/>
       <div className="flex">
         <div className="w-2/12 fixed left-2">
           <Left_Bar/>
