@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { HomeIcon, HashtagIcon, ChartBarSquareIcon, PencilSquareIcon, BellIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import profile from './img/profile.jpg';
+
 
 export default function Left_Bar() {
     return (
@@ -33,6 +35,20 @@ export default function Left_Bar() {
             </div>
             <div className="mx-10">
                 <button className="bg-green-600 py-3 w-full px-5 text-xl text-white rounded-2xl">Link</button>
+            </div>
+
+            <div className="absolute mt-20">
+                <div className="mx-2 flex p-1">
+                <Image
+                        src={profile}
+                        className="rounded-full h-12 w-12 mr-5"
+                        alt = ""
+                    />
+                    <Link href="profile">
+                        <h5>Fedora</h5>
+                        <h6 className="text-green-600">Researcher</h6>
+                    </Link>
+                </div>
             </div>
         </div>
     )
