@@ -44,5 +44,12 @@
 
 /* Login Page */
 .login_bg{
-  background-color: blue;
+  background-image: url("https://images.unsplash.com/photo-1515694590185-73647ba02c10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwcGxhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: 100%;
+  background-repeat : no-repeat;
+}
+
+.login_section{
+  background-color: black;
+  opacity: .7;
 }
