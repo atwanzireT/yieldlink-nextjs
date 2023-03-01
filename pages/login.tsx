@@ -1,23 +1,25 @@
 import FooterSmall from "@/components/features/login/footer";
 import Navbar from "@/components/features/login/header";
 import Topbar from "@/components/features/topbar";
-import github from "./assets/img/github.svg";
-import google_icon from "./assets/img/google.svg";
-import register_bg from "./assets/img/register_bg_2.png";
+
 
 export default function Login() {
     return (
-        <div>
+        <div className="login_bg">
             <Navbar transparent />
-            <main>
+            <main
+                    style={{
+                        background:"#00FF00",
+                    }}>
                 <section className="absolute w-full h-full">
                     <div
-                        className="absolute top-0 w-full h-full bg-gray-900"
+                        className="absolute top-0 w-full h-full "
                         // style={{
                         //     backgroundImage:
-                        //         "url(" + require("./assets/img/register_bg_2.png").default + ")",
+                        //         "https://images.unsplash.com/photo-1515694590185-73647ba02c10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwcGxhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
                         //     backgroundSize: "100%",
                         //     backgroundRepeat: "no-repeat"
+                        //     bg-green-900 
                         // }}
                     ></div>
                     <div className="container mx-auto px-4 h-full">
@@ -26,33 +28,34 @@ export default function Login() {
                                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0">
                                     <div className="rounded-t mb-0 px-6 py-6">
                                         <div className="text-center mb-3">
-                                            <h6 className="text-gray-600 text-sm font-bold">
+                                            <h6 className="text-green-600 text-sm font-bold">
                                                 Sign in with
                                             </h6>
                                         </div>
                                         <div className="btn-wrapper text-center">
                                             <button
-                                                className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
+                                                className="bg-white active:bg-gray-100 text-green-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
                                                 type="button"
                                                 style={{ transition: "all .15s ease" }}
                                             >
-                                                <img
+                                                {/* <img
                                                     alt="..."
                                                     className="w-5 mr-1"
                                                     src={github}
-                                                />
-                                                Github
+                                                /> */}
+                                                Facebook
                                             </button>
                                             <button
-                                                className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
+                                                className="bg-white active:bg-gray-100 text-green-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
                                                 type="button"
                                                 style={{ transition: "all .15s ease" }}
                                             >
-                                                <img
+                                                
+                                                {/* <img
                                                     alt="..."
                                                     className="w-5 mr-1"
                                                     src={google_icon}
-                                                />
+                                                /> */}
                                                 Google
                                             </button>
                                         </div>
@@ -65,14 +68,14 @@ export default function Login() {
                                         <form>
                                             <div className="relative w-full mb-3">
                                                 <label
-                                                    className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                    className="block uppercase text-green-700 text-xs font-bold mb-2"
                                                     htmlFor="grid-password"
                                                 >
                                                     Email
                                                 </label>
                                                 <input
                                                     type="email"
-                                                    className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                                    className="border-0 px-3 py-3 placeholder-gray-400 text-green-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                                     placeholder="Email"
                                                     style={{ transition: "all .15s ease" }}
                                                 />
@@ -80,14 +83,14 @@ export default function Login() {
 
                                             <div className="relative w-full mb-3">
                                                 <label
-                                                    className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                    className="block uppercase text-green-700 text-xs font-bold mb-2"
                                                     htmlFor="grid-password"
                                                 >
                                                     Password
                                                 </label>
                                                 <input
                                                     type="password"
-                                                    className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                                    className="border-0 px-3 py-3 placeholder-gray-400 text-green-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                                     placeholder="Password"
                                                     style={{ transition: "all .15s ease" }}
                                                 />
@@ -97,10 +100,10 @@ export default function Login() {
                                                     <input
                                                         id="customCheckLogin"
                                                         type="checkbox"
-                                                        className="form-checkbox border-0 rounded text-gray-800 ml-1 w-5 h-5"
+                                                        className="form-checkbox border-0 rounded text-green-800 ml-1 w-5 h-5"
                                                         style={{ transition: "all .15s ease" }}
                                                     />
-                                                    <span className="ml-2 text-sm font-semibold text-gray-700">
+                                                    <span className="ml-2 text-sm font-semibold text-green-700">
                                                         Remember me
                                                     </span>
                                                 </label>
@@ -108,7 +111,7 @@ export default function Login() {
 
                                             <div className="text-center mt-6">
                                                 <button
-                                                    className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
+                                                    className="bg-green-900 text-white active:bg-green-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
                                                     type="button"
                                                     style={{ transition: "all .15s ease" }}
                                                 >
@@ -123,7 +126,7 @@ export default function Login() {
                                         <a
                                             href="#pablo"
                                             onClick={e => e.preventDefault()}
-                                            className="text-gray-300"
+                                            className="text-green-300"
                                         >
                                             <small>Forgot password?</small>
                                         </a>
@@ -132,7 +135,7 @@ export default function Login() {
                                         <a
                                             href="#pablo"
                                             onClick={e => e.preventDefault()}
-                                            className="text-gray-300"
+                                            className="text-green-300"
                                         >
                                             <small>Create new account</small>
                                         </a>

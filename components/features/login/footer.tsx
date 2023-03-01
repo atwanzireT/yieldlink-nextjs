@@ -6,7 +6,7 @@ export default function FooterSmall(props) {
       <footer
         className={
           (props.absolute
-            ? "absolute w-full bottom-0 bg-gray-900"
+            ? "absolute w-full bottom-0 bg-green-900"
             : "relative") + " pb-6"
         }
       >
@@ -20,20 +20,12 @@ export default function FooterSmall(props) {
                   href="https://www.creative-tim.com"
                   className="text-white hover:text-gray-400 text-sm font-semibold py-1"
                 >
-                  Creative Tim
+                  Fedora
                 </a>
               </div>
             </div>
             <div className="w-full md:w-8/12 px-4">
               <ul className="flex flex-wrap list-none md:justify-end  justify-center">
-                <li>
-                  <a
-                    href="https://www.creative-tim.com"
-                    className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                  >
-                    Creative Tim
-                  </a>
-                </li>
                 <li>
                   <a
                     href="https://www.creative-tim.com/presentation"
@@ -48,14 +40,6 @@ export default function FooterSmall(props) {
                     className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                   >
                     Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                    className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                  >
-                    MIT License
                   </a>
                 </li>
               </ul>

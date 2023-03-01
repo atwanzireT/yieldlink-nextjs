@@ -41,3 +41,8 @@
 .profile_img{
   margin-top: -80px;
 }
+
+/* Login Page */
+.login_bg{
+  background-color: blue;
+}
