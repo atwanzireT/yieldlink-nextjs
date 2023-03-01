@@ -18,7 +18,7 @@ const fetchPosts = async () => {
         const response = await axios.get("http://127.0.0.1:8000/api/v1/posts/");
         return response.data;
     } catch (error) {
-        alert(error);
+        console.log(error);
     }
 }
 
@@ -33,7 +33,7 @@ export function PostCard() {
         fetchPostsFromAPI();
     }, [])
 
-    console.log(post)
+    // console.log(post)
 
     return (
         <div>

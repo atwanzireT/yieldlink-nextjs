@@ -10,7 +10,7 @@ export default function UserCard() {
                 <div>
                     <Image
                         src={cover}
-                        className="w-full mx-2 h-50 rounded-md"
+                        className="w-full mx-2 h-30 rounded-md"
                         alt='' />
                 </div>
                 <div className="flex">
@@ -27,15 +27,15 @@ export default function UserCard() {
                 <p>no Abouts</p>
             </div>
             <div className="flex my-3">
-                <div className='flex mx-4'>
+                <div className='flex mx-8'>
                     <MapPinIcon className='h-5 w-5 m-auto text-gray-600'/>
                     <h5>Uganda</h5>
                 </div>
-                <div className='flex mx-4'>
+                <div className='flex mx-8'>
                     <ClockIcon className='h-5 w-5 m-auto text-gray-600'/>
                     <h5>Born February 3rd 2001</h5>
                 </div>
-                <div className='flex mx-4'>
+                <div className='flex mx-8'>
                     <ClockIcon className='h-5 w-5 m-auto text-gray-600'/>
                     <h5>Joined February 23rd 2023</h5>
                 </div>
