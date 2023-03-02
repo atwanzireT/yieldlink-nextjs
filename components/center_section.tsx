@@ -15,7 +15,7 @@ export default function Center_Section() {
                 <Create_Post />
             </div>
             <div>
-                <h6 className="text-green-600 text-2xl py-2">View All Issues</h6>
+                <h6 className="text-green-900 text-2xl py-2">View All Issues</h6>
             </div>
             <div className="mx-auto">
                 <PostCard />

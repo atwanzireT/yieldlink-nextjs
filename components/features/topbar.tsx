@@ -7,7 +7,7 @@ import profile from './img/profile.jpg';
 
 export default function Topbar() {
     return (
-        <div className="sticky top-0 mb-1 z-50 bg-green-600">
+        <div className="sticky top-0 mb-1 z-50 bg-green-900">
             <div className="flex my-0">
                 <div className="left_bar flex">
                     <div className="my-auto ml-3">

@@ -34,7 +34,7 @@ export default function Left_Bar() {
                 <Link href="#" className="text-2xl">Profile</Link>
             </div>
             <div className="mx-10">
-                <button className="bg-green-600 py-3 w-full px-5 text-xl text-white rounded-2xl">Link</button>
+                <button className="bg-green-900 py-3 w-full px-5 text-xl text-white rounded-2xl">Link</button>
             </div>
 
             <div className="absolute mt-20">
@@ -46,7 +46,7 @@ export default function Left_Bar() {
                     />
                     <Link href="profile">
                         <h5>Fedora</h5>
-                        <h6 className="text-green-600">Researcher</h6>
+                        <h6 className="text-green-900">Researcher</h6>
                     </Link>
                 </div>
             </div>

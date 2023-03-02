@@ -21,7 +21,7 @@ export default function Create_Post() {
                         <MapPinIcon className="w-6 h-6 mx-5" />
                     </div>
                     <div className="div-end">
-                        <button className="bg-green-600 px-5 rounded-2xl py-2 text-white  mx-2">Link</button>
+                        <button className="bg-green-900 px-5 rounded-2xl py-2 text-white  mx-2">Link</button>
                     </div>
                 </div>
             </div>

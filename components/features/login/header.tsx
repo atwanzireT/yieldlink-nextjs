@@ -111,7 +111,7 @@ export default function Navbar(props) {
               </li>
 
               <li className="flex items-center">
-                <button
+                {/* <button
                   className={
                     (props.transparent
                       ? "bg-white text-gray-800 active:bg-gray-100"
@@ -122,7 +122,7 @@ export default function Navbar(props) {
                   style={{ transition: "all .15s ease" }}
                 >
                   <i className="fas fa-arrow-alt-circle-down"></i> Download
-                </button>
+                </button> */}
               </li>
             </ul>
           </div>
