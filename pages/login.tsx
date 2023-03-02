@@ -1,9 +1,28 @@
 import FooterSmall from "@/components/features/login/footer";
 import Navbar from "@/components/features/login/header";
-import Topbar from "@/components/features/topbar";
+import { useRouter } from "next/router";
+import { SyntheticEvent, useState } from "react";
 
 
 export default function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const router = useRouter();
+
+    const submit = async (e : SyntheticEvent) =>{
+        e.preventDefault();
+
+        await fetch("http://127.0.0.1:8000/api/user/login/", {
+            method: "POST",
+            headers : {"Content-Type": "application/json"},
+            credentials:"include",
+            body: JSON.stringify({
+                email,
+                password
+            })
+        });
+        router.push("")
+    }
     return (
         <div>
             <Navbar transparent />
@@ -55,7 +74,7 @@ export default function Login() {
                                         <div className="text-gray-500 text-center mb-3 font-bold">
                                             <small>Or sign in with credentials</small>
                                         </div>
-                                        <form>
+                                        <form onSubmit={submit}>
                                             <div className="relative w-full mb-3">
                                                 <label
                                                     className="block uppercase text-green-700 text-xs font-bold mb-2"
@@ -68,6 +87,8 @@ export default function Login() {
                                                     className="border-0 px-3 py-3 placeholder-gray-400 text-green-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                                     placeholder="Email"
                                                     style={{ transition: "all .15s ease" }}
+                                                    required
+                                                    onChange={e => setEmail(e.target.value)}
                                                 />
                                             </div>
 
@@ -83,6 +104,8 @@ export default function Login() {
                                                     className="border-0 px-3 py-3 placeholder-gray-400 text-green-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                                     placeholder="Password"
                                                     style={{ transition: "all .15s ease" }}
+                                                    required
+                                                    onChange={e => setPassword(e.target.value)}
                                                 />
                                             </div>
                                             <div>
@@ -102,7 +125,7 @@ export default function Login() {
                                             <div className="text-center mt-6">
                                                 <button
                                                     className="bg-green-900 text-white active:bg-green-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
-                                                    type="button"
+                                                    type="submit"
                                                     style={{ transition: "all .15s ease" }}
                                                 >
                                                     Sign In
